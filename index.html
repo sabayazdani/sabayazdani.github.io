@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Saba Yazdani | Full-Stack Engineer</title>
+<title>Saba Yazdani | Software Developer</title>
 <meta name="author" content="Saba Yazdani">
-<meta name="description" content="Full-stack engineer in Toronto. Builds and maintains Gradify, an AI-assisted platform in production at York University. React, TypeScript, Node, Python, PostgreSQL, LLM systems.">
-<meta property="og:title" content="Saba Yazdani | Software Engineer &amp; AI Researcher">
-<meta property="og:description" content="Software engineering, AI, research, and selected projects including Gradify and agentic systems. Based in Toronto, with four peer-reviewed publications.">
+<meta name="description" content="Software developer in Toronto building AI products, including the Realest voice agent, the Maridian multi-agent system, and the Gradify grading platform.">
+<meta property="og:title" content="Saba Yazdani | Software Developer &amp; AI Researcher">
+<meta property="og:description" content="Software developer in Toronto building AI products, including the Realest voice agent, the Maridian multi-agent system, and the Gradify grading platform.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sabayazdani.github.io/">
 <meta property="og:image" content="https://sabayazdani.github.io/preview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Saba Yazdani | Software Engineer &amp; AI Researcher">
+<meta property="og:image:alt" content="Saba Yazdani | Software Developer &amp; AI Researcher">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Saba Yazdani | Software Engineer &amp; AI Researcher">
-<meta name="twitter:description" content="Software engineering, AI, research, and selected projects including Gradify and agentic systems. Based in Toronto, with four peer-reviewed publications.">
+<meta name="twitter:title" content="Saba Yazdani | Software Developer &amp; AI Researcher">
+<meta name="twitter:description" content="Software developer in Toronto building AI products, including the Realest voice agent, the Maridian multi-agent system, and the Gradify grading platform.">
 <meta name="twitter:image" content="https://sabayazdani.github.io/preview.png">
 <script>
   /* runs before first paint: no dark-mode flash, and .reveal only hides content when JS is live */
@@ -73,11 +73,13 @@
     </div>
     <div class="about-grid">
       <div class="reveal">
-        <p>I'm a full-stack engineer in Toronto. I build and maintain <strong>Gradify</strong>, an AI-assisted grading platform that runs in production across senior Computer Science courses at York University. React runs the front end, Java and Spring Boot REST services sit behind it, PostgreSQL holds the data, and Claude and Gemini do the multimodal grading.</p>
-        <h3>The part I care about most</h3>
-        <p>Designing the gate between a model and a consequence. On Gradify the model proposes rubric scores and criterion-level feedback, an instructor reviews, overrides and gives final approval before anything reaches a student, and every decision is logged with its justification. I made the same call independently on Maridian, where an agent pipeline recommends recovery actions but nothing customer-facing ships without operator sign-off.</p>
-        <h3>Research and the rest</h3>
-        <p>I've been a research assistant at York since 2024, across three labs: programming education, data mining, and theoretical computer science. I've co-authored four peer-reviewed publications, three of them as co-first author. Outside the lab I build at hackathons, which is where Maridian and Realest came from.</p>
+        <p>I'm a software developer in Toronto. I build AI products end to end, from the Python and Java services that do the work to the React interfaces people use.</p>
+        <h3>Realest</h3>
+        <p>A voice agent that phones rental listing agents on a renter's behalf to check availability, fees, parking, and pet policies, built with a team of four at the AI Tinkerers hackathon. I built the outbound calling in Python with FastAPI and asyncio, so many calls run at once with per-call timeouts and fallbacks. I also built the email fallback for calls nobody answers, with a guard so no message goes out twice, and the LLM pipeline that turns each call transcript into structured data used to re-rank the listings.</p>
+        <h3>Maridian</h3>
+        <p>A decision layer for a bakery's production floor, built at the TMLS Agentic Hackathon. It takes defect events from the line, runs them through LLM agents for triage, action planning, and scoring, and streams live updates to a React and Next.js dashboard. Nothing customer-facing happens until an operator approves it, and every decision is logged. I built the FastAPI backend, the agent workflow, and the Server-Sent Events stream, and deployed it to Vercel and Railway.</p>
+        <h3>Gradify</h3>
+        <p>The AI-assisted grading platform I build and maintain for senior Computer Science courses at York University. Claude and Gemini propose scores for handwritten and PDF work, and instructors approve each result before students see it. It runs on React, Spring Boot, and PostgreSQL.</p>
       </div>
       <aside class="reveal">
         <ul class="facts">
@@ -192,28 +194,11 @@
     <div class="head reveal">
       <p class="eyebrow">What I've built</p><div class="rule"></div>
       <h2>Selected Projects</h2>
-      <p>One platform in production and two agent systems shipped under hackathon deadlines.</p>
+      <p>Two agent systems shipped under hackathon deadlines, and a platform in production at York University.</p>
     </div>
 
     <article class="proj reveal">
       <div class="num">01</div>
-      <div>
-        <p class="ptag">Production · York University</p>
-        <h3>Gradify: AI-Assisted Grading Platform</h3>
-        <p class="blurb">A full-stack platform that grades handwritten and PDF submissions with multimodal LLMs, and keeps a human in final control of every result.</p>
-        <ul>
-          <li>Built and deployed the full stack for live courses: React instructor, student, and admin workflows over Spring Boot REST APIs, PostgreSQL persistence, and role-based access control.</li>
-          <li>Designed the AI oversight model. The model proposes rubric scores and criterion-level feedback, an instructor overrides and gives final approval before release, and every decision is logged with its justification.</li>
-          <li>Built a Java autograding pipeline with in-memory compilation via the JavaCompiler API, JUnit 5 execution through the Platform Launcher, and Checkstyle static analysis with weighted test and style scoring.</li>
-          <li>Developed asynchronous batch processing with Spring @Async and custom thread pools: concurrent multi-student grading, per-batch locking, retries, progress tracking, and email delivery.</li>
-        </ul>
-        <div class="tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span><span class="tag">Claude</span><span class="tag">Gemini</span><span class="tag">JUnit 5</span><span class="tag">Checkstyle</span></div>
-        <div class="plinks"><a href="https://gradify.eecs.yorku.ca/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Visit Gradify</a></div>
-      </div>
-    </article>
-
-    <article class="proj reveal">
-      <div class="num">02</div>
       <div>
         <p class="ptag">AI Tinkerers Hackathon 2026</p>
         <h3>Realest: AI Voice Agent for Rental Verification</h3>
@@ -230,14 +215,14 @@
     </article>
 
     <article class="proj reveal">
-      <div class="num">03</div>
+      <div class="num">02</div>
       <div>
         <p class="ptag">TMLS Agentic Hackathon 2026</p>
         <h3>Maridian: Multi-Agent Decision Layer with Operator Sign-Off</h3>
         <p class="blurb">A decision layer for the factory floor: it ingests production-line defect events and recommends recovery actions, but never acts alone.</p>
         <ul>
           <li>Built the Python and FastAPI backend and its REST API, streaming live workflow updates to a React and Next.js dashboard over Server-Sent Events.</li>
-          <li>Engineered an LLM multi-agent workflow for incident triage, action planning, and scoring, with human-in-the-loop approval controls and decision logging so no customer-facing action ships without operator sign-off.</li>
+          <li>Designed an LLM multi-agent workflow for incident triage, action planning, and scoring, with human-in-the-loop approval controls and decision logging so no customer-facing action ships without operator sign-off.</li>
           <li>Deployed both tiers to managed cloud hosting as a working public application.</li>
         </ul>
         <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">Server-Sent Events</span><span class="tag">Vercel</span><span class="tag">Railway</span></div>
@@ -245,6 +230,23 @@
           <a href="https://fgf-sentinel-web.vercel.app/maridian/login.html" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live demo</a>
           <a href="https://github.com/sabayazdani/maridian-sentinel" target="_blank" rel="noopener"><i class="bi bi-github"></i> View code</a>
         </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="num">03</div>
+      <div>
+        <p class="ptag">Production · York University</p>
+        <h3>Gradify: AI-Assisted Grading Platform</h3>
+        <p class="blurb">A full-stack platform that grades handwritten and PDF submissions with multimodal LLMs, and keeps a human in final control of every result.</p>
+        <ul>
+          <li>Built and deployed the full stack for live courses: React instructor, student, and admin workflows over Spring Boot REST APIs, PostgreSQL persistence, and role-based access control.</li>
+          <li>Designed the AI oversight model. The model proposes rubric scores and criterion-level feedback, an instructor overrides and gives final approval before release, and every decision is logged with its justification.</li>
+          <li>Built a Java autograding pipeline with in-memory compilation via the JavaCompiler API, JUnit 5 execution through the Platform Launcher, and Checkstyle static analysis with weighted test and style scoring.</li>
+          <li>Developed asynchronous batch processing with Spring @Async and custom thread pools: concurrent multi-student grading, per-batch locking, retries, progress tracking, and email delivery.</li>
+        </ul>
+        <div class="tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span><span class="tag">Claude</span><span class="tag">Gemini</span><span class="tag">JUnit 5</span><span class="tag">Checkstyle</span></div>
+        <div class="plinks"><a href="https://gradify.eecs.yorku.ca/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Visit Gradify</a></div>
       </div>
     </article>
 

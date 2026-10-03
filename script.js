@@ -49,7 +49,7 @@
   });
 
   /* ---- typewriter ---- */
-  var roles = ['Full-Stack Engineer', 'AI Systems Builder', 'Research Assistant @ York', 'Human-in-the-Loop by Design'];
+  var roles = ['Software Developer', 'AI Systems Builder', 'Research Assistant @ York', 'Human-in-the-Loop by Design'];
   var el = document.getElementById('type');
   if (reduce) {
     el.textContent = roles[0];
