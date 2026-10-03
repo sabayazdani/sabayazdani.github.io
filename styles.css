@@ -121,6 +121,10 @@ section{padding:104px 0}
 /* projects */
 .proj{display:grid; grid-template-columns:auto 1fr; gap:28px; padding:32px; background:var(--card);
   border:1px solid var(--line); border-radius:var(--radius); margin-bottom:26px; transition:.3s}
+.about-grid p a{font-weight:600; text-decoration:underline; text-decoration-thickness:2px;
+  text-underline-offset:4px; text-decoration-color:var(--accent-tint-2)}
+.about-grid p a:hover{text-decoration-color:currentColor}
+.proj:target{border-color:var(--accent); box-shadow:var(--glow)}
 .proj:hover{transform:translateY(-4px); box-shadow:var(--glow); border-color:var(--accent-tint-2)}
 .num{font-family:Poppins,sans-serif; font-weight:700; font-size:2rem; color:var(--accent-tint-2); line-height:1}
 .ptag{font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}

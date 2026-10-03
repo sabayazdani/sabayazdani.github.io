@@ -73,13 +73,10 @@
     </div>
     <div class="about-grid">
       <div class="reveal">
-        <p>I'm a software developer in Toronto. I build AI products end to end, from the Python and Java services that do the work to the React interfaces people use.</p>
-        <h3>Realest</h3>
-        <p>A voice agent that phones rental listing agents on a renter's behalf to check availability, fees, parking, and pet policies, built with a team of four at the AI Tinkerers hackathon. I built the outbound calling in Python with FastAPI and asyncio, so many calls run at once with per-call timeouts and fallbacks. I also built the email fallback for calls nobody answers, with a guard so no message goes out twice, and the LLM pipeline that turns each call transcript into structured data used to re-rank the listings.</p>
-        <h3>Maridian</h3>
-        <p>A decision layer for a bakery's production floor, built at the TMLS Agentic Hackathon. It takes defect events from the line, runs them through LLM agents for triage, action planning, and scoring, and streams live updates to a React and Next.js dashboard. Nothing customer-facing happens until an operator approves it, and every decision is logged. I built the FastAPI backend, the agent workflow, and the Server-Sent Events stream, and deployed it to Vercel and Railway.</p>
-        <h3>Gradify</h3>
-        <p>The AI-assisted grading platform I build and maintain for senior Computer Science courses at York University. Claude and Gemini propose scores for handwritten and PDF work, and instructors approve each result before students see it. It runs on React, Spring Boot, and PostgreSQL.</p>
+        <p>I'm a software developer in Toronto building full-stack AI products and agentic systems.</p>
+        <p>My work spans backend services, LLM-powered workflows, and modern web interfaces, with a focus on turning complex real-world processes into reliable software.</p>
+        <p>Recent work includes <a href="#realest">Realest</a>, an AI voice agent that handles rental verification calls; <a href="#maridian">Maridian</a>, a multi-agent decision system for manufacturing operations; and <a href="#gradify">Gradify</a>, an AI-assisted grading platform used at York University.</p>
+        <p>I'm especially interested in building AI systems that can reason, use tools, and automate meaningful parts of a workflow while keeping people in control of important decisions.</p>
       </div>
       <aside class="reveal">
         <ul class="facts">
@@ -197,7 +194,7 @@
       <p>Two agent systems shipped under hackathon deadlines, and a platform in production at York University.</p>
     </div>
 
-    <article class="proj reveal">
+    <article class="proj reveal" id="realest">
       <div class="num">01</div>
       <div>
         <p class="ptag">AI Tinkerers Hackathon 2026</p>
@@ -214,7 +211,7 @@
       </div>
     </article>
 
-    <article class="proj reveal">
+    <article class="proj reveal" id="maridian">
       <div class="num">02</div>
       <div>
         <p class="ptag">TMLS Agentic Hackathon 2026</p>
@@ -233,7 +230,7 @@
       </div>
     </article>
 
-    <article class="proj reveal">
+    <article class="proj reveal" id="gradify">
       <div class="num">03</div>
       <div>
         <p class="ptag">Production · York University</p>
