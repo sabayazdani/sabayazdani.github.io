@@ -1,4 +1,4 @@
-/* Saba Yazdani — personal site */
+/* Saba Yazdani: personal site */
 :root{
   --ink:#1F2A44; --accent:#4F46E5; --accent-bright:#8B5CF6;
   --accent-grad:linear-gradient(135deg,#4F46E5 0%,#8B5CF6 100%);
@@ -26,6 +26,7 @@ h1,h2,h3,h4,.display{font-family:Poppins,sans-serif; color:var(--ink); line-heig
 a{color:var(--accent); text-decoration:none}
 a:hover{color:var(--accent-bright)}
 img{max-width:100%}
+sub{font-size:.7em; line-height:0; vertical-align:-.25em}
 .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
@@ -141,6 +142,12 @@ section{padding:104px 0}
 .venue{flex:none; width:128px; font-size:11.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); padding-top:3px}
 .pub h3{font-size:1.05rem; font-weight:600; margin-bottom:4px}
 .pub p{margin:0; font-size:14.5px; color:var(--muted)}
+.pub > div{min-width:0}
+.pub .authors{font-size:13.5px; margin:3px 0 7px}
+.pub .authors b{color:var(--ink); font-weight:600}
+.badge{display:inline-block; margin-left:8px; padding:2px 9px; border-radius:999px; font-size:10.5px; font-weight:700;
+  letter-spacing:.08em; text-transform:uppercase; background:var(--accent-tint); color:var(--accent); vertical-align:1px}
+.pub .plinks{margin-top:10px}
 
 /* contact */
 .contact{display:grid; grid-template-columns:1fr 1fr; gap:52px; align-items:center}
@@ -151,8 +158,8 @@ section{padding:104px 0}
 footer{padding:34px 0; border-top:1px solid var(--line); text-align:center; font-size:13.5px; color:var(--muted)}
 
 /* reveal + to-top */
-.reveal{opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
-.reveal.in{opacity:1; transform:none}
+.js .reveal{opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.js .reveal.in{opacity:1; transform:none}
 #top{position:fixed; right:26px; bottom:26px; z-index:55; opacity:0; pointer-events:none; transition:.3s}
 #top.show{opacity:1; pointer-events:auto}
 
@@ -163,12 +170,15 @@ footer{padding:34px 0; border-top:1px solid var(--line); text-align:center; font
     border-bottom:1px solid var(--line); padding:8px 24px 18px; display:none}
   .nav-links.open{display:flex}
   .nav-links a{padding:13px 0; display:block; border-bottom:1px solid var(--line)}
-  .burger{display:grid; margin-left:auto}
+  .burger{display:grid}
+  #theme{margin-left:auto}
   .nav-links{margin-left:0}
   .proj{grid-template-columns:1fr; gap:14px; padding:26px}
   section{padding:76px 0}
+  .pub{flex-direction:column; gap:6px}
+  .venue{width:auto}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
-  .reveal{opacity:1; transform:none}
+  .js .reveal{opacity:1; transform:none}
 }

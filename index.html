@@ -3,11 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Saba Yazdani — Full-Stack Engineer</title>
+<title>Saba Yazdani | Full-Stack Engineer</title>
 <meta name="description" content="Full-stack engineer in Toronto. Builds and maintains Gradify, an AI-assisted platform in production at York University. React, TypeScript, Node, Python, PostgreSQL, LLM systems.">
-<meta property="og:title" content="Saba Yazdani — Full-Stack Engineer">
+<meta property="og:title" content="Saba Yazdani | Full-Stack Engineer">
 <meta property="og:description" content="Full-stack engineer in Toronto. Production AI systems, LLM integration, and four peer-reviewed publications.">
 <meta property="og:type" content="website">
+<script>
+  /* runs before first paint: no dark-mode flash, and .reveal only hides content when JS is live */
+  (function(){var d=document.documentElement;d.classList.add('js');var t=null;
+  try{t=localStorage.getItem('theme')}catch(e){}
+  if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+  if(t)d.setAttribute('data-theme',t);})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -38,7 +45,7 @@
     <p class="eyebrow">Toronto, Canada</p>
     <h1>Saba <em>Yazdani</em></h1>
     <p class="typed"><span id="type"></span><span class="caret"></span></p>
-    <p class="lede">I build software that puts a person in the loop — AI proposes, a human approves, and every decision is on the record.</p>
+    <p class="lede">I build software that puts a person in the loop. AI proposes, a human approves, and every decision is on the record.</p>
     <div class="cta">
       <a href="#projects" class="btn btn-primary">View my work <i class="bi bi-arrow-right"></i></a>
       <a href="#contact" class="btn btn-ghost">Get in touch</a>
@@ -55,11 +62,11 @@
     </div>
     <div class="about-grid">
       <div class="reveal">
-        <p>I'm a full-stack engineer in Toronto. I build and maintain <strong>Gradify</strong>, an AI-assisted grading platform that runs in production across senior Computer Science courses at York University — React on the front, Java and Spring Boot REST services behind it, PostgreSQL underneath, and Claude and Gemini doing the multimodal grading.</p>
+        <p>I'm a full-stack engineer in Toronto. I build and maintain <strong>Gradify</strong>, an AI-assisted grading platform that runs in production across senior Computer Science courses at York University. React runs the front end, Java and Spring Boot REST services sit behind it, PostgreSQL holds the data, and Claude and Gemini do the multimodal grading.</p>
         <h3>The part I care about most</h3>
         <p>Designing the gate between a model and a consequence. On Gradify the model proposes rubric scores and criterion-level feedback, an instructor reviews, overrides and gives final approval before anything reaches a student, and every decision is logged with its justification. I made the same call independently on Maridian, where an agent pipeline recommends recovery actions but nothing customer-facing ships without operator sign-off.</p>
         <h3>Research and the rest</h3>
-        <p>I've been a research assistant at York since 2024, across three labs — programming education, data mining, and theoretical computer science — and I've co-authored four peer-reviewed publications. Outside the lab I build at hackathons, which is where Maridian and Realest came from.</p>
+        <p>I've been a research assistant at York since 2024, across three labs: programming education, data mining, and theoretical computer science. I've co-authored four peer-reviewed publications, three of them as co-first author. Outside the lab I build at hackathons, which is where Maridian and Realest came from.</p>
       </div>
       <aside class="reveal">
         <ul class="facts">
@@ -83,9 +90,9 @@
   <div class="wrap">
     <div class="stats reveal">
       <div class="stat"><div class="n" data-count="4">4</div><p>Peer-reviewed publications</p></div>
+      <div class="stat"><div class="n" data-count="3">3</div><p>As co-first author</p></div>
+      <div class="stat"><div class="n" data-count="901">901</div><p>Students in our generative AI study</p></div>
       <div class="stat"><div class="n" data-count="3.84" data-dec="2">3.84</div><p>GPA out of 4.0</p></div>
-      <div class="stat"><div class="n" data-count="3">3</div><p>York research labs</p></div>
-      <div class="stat"><div class="n" data-count="5" data-suffix="+">5+</div><p>A+ core CS courses</p></div>
     </div>
   </div>
 </section>
@@ -102,29 +109,30 @@
         <div class="tl">
           <div class="tl-item">
             <div class="role">Research Assistant</div>
-            <div class="when">Apr 2024 — Present</div>
+            <div class="when">Apr 2024 - Present</div>
             <div class="where">York University, Toronto</div>
             <div class="sub">
               <h4>Programming Education Lab</h4>
-              <div class="when">Sep 2024 — Present</div>
+              <div class="when">Sep 2024 - Present</div>
               <ul>
-                <li>Build and maintain <strong>Gradify</strong> in production use by instructors and students across senior courses — React front end, Spring Boot REST services, PostgreSQL.</li>
+                <li>Build and maintain <strong>Gradify</strong> in production use by instructors and students across senior courses, built with React, Spring Boot REST services, and PostgreSQL.</li>
                 <li>Ship end-to-end features across student, instructor, and admin workflows; debug and resolve production issues during live courses.</li>
                 <li>Wrote unit and integration tests covering grading logic; manage releases through Git-based workflows.</li>
-                <li>Co-authored three peer-reviewed conference publications on the platform.</li>
+                <li>Co-authored three peer-reviewed papers built on the platform, all three as co-first author.</li>
               </ul>
             </div>
             <div class="sub">
               <h4>Theory Computing Lab</h4>
-              <div class="when">Apr 2024 — Present</div>
+              <div class="when">Apr 2024 - Present</div>
               <ul>
                 <li>Built succinct graph data structures for compact storage and efficient queries on large datasets.</li>
                 <li>Implemented and evaluated algorithms, analyzing performance, correctness, and memory trade-offs.</li>
+                <li>Co-authored <em>Geometric Burning Under L<sub>1</sub> and L<sub>∞</sub> Metrics, and Beyond</em>, accepted at WAOA 2026.</li>
               </ul>
             </div>
             <div class="sub">
               <h4>Data Mining Lab</h4>
-              <div class="when">Jan 2025 — Dec 2025</div>
+              <div class="when">Jan 2025 - Dec 2025</div>
               <ul>
                 <li>Built a Python question-answering service over structured geospatial datasets using embeddings and FAISS vector search with a lightweight LLM.</li>
                 <li>Evaluated model outputs for accuracy, consistency, and reliability; wrote the technical documentation.</li>
@@ -133,7 +141,7 @@
           </div>
           <div class="tl-item">
             <div class="role">Teaching Assistant</div>
-            <div class="when">Jan 2025 — Dec 2025</div>
+            <div class="when">Jan 2025 - Dec 2025</div>
             <div class="where">York University, Toronto</div>
             <ul>
               <li>Led lab sessions and ran code reviews of student work across EECS2021 (Computer Organization), EECS2030 (Object-Oriented Programming), and EECS3000 (Professional Practice).</li>
@@ -146,10 +154,10 @@
         <div class="tl">
           <div class="tl-item">
             <div class="role">B.Sc. Computer Science</div>
-            <div class="when">2021 — 2025</div>
+            <div class="when">2021 - 2025</div>
             <div class="where">York University, Specialized Honours</div>
             <ul>
-              <li>GPA 3.84 / 4.0 — First Class with Distinction.</li>
+              <li>GPA 3.84 / 4.0, First Class with Distinction.</li>
               <li>A+ in Software Design, Database Management Systems, Artificial Intelligence, Big Data Systems, and Design and Analysis of Algorithms.</li>
             </ul>
           </div>
@@ -158,8 +166,8 @@
             <div class="when">2026</div>
             <div class="where">Toronto</div>
             <ul>
-              <li><strong>TMLS Agentic Hackathon</strong> — Maridian, a multi-agent decision layer with operator sign-off.</li>
-              <li><strong>AI Tinkerers Hackathon</strong> — Realest, an AI voice agent built with a team of four.</li>
+              <li><strong>TMLS Agentic Hackathon:</strong> Maridian, a multi-agent decision layer with operator sign-off.</li>
+              <li><strong>AI Tinkerers Hackathon:</strong> Realest, an AI voice agent built with a team of four.</li>
             </ul>
           </div>
         </div>
@@ -180,11 +188,11 @@
       <div class="num">01</div>
       <div>
         <p class="ptag">Production · York University</p>
-        <h3>Gradify — AI-Assisted Grading Platform</h3>
+        <h3>Gradify: AI-Assisted Grading Platform</h3>
         <p class="blurb">A full-stack platform that grades handwritten and PDF submissions with multimodal LLMs, and keeps a human in final control of every result.</p>
         <ul>
           <li>Built and deployed the full stack for live courses: React instructor, student, and admin workflows over Spring Boot REST APIs, PostgreSQL persistence, and role-based access control.</li>
-          <li>Designed the AI oversight model — the model proposes rubric scores and criterion-level feedback, an instructor overrides and gives final approval before release, and every decision is logged with its justification.</li>
+          <li>Designed the AI oversight model. The model proposes rubric scores and criterion-level feedback, an instructor overrides and gives final approval before release, and every decision is logged with its justification.</li>
           <li>Built a Java autograding pipeline with in-memory compilation via the JavaCompiler API, JUnit 5 execution through the Platform Launcher, and Checkstyle static analysis with weighted test and style scoring.</li>
           <li>Developed asynchronous batch processing with Spring @Async and custom thread pools: concurrent multi-student grading, per-batch locking, retries, progress tracking, and email delivery.</li>
         </ul>
@@ -197,12 +205,12 @@
       <div class="num">02</div>
       <div>
         <p class="ptag">AI Tinkerers Hackathon 2026</p>
-        <h3>Realest — AI Voice Agent for Rental Verification</h3>
+        <h3>Realest: AI Voice Agent for Rental Verification</h3>
         <p class="blurb">A voice agent that phones listing agents on a renter's behalf to verify availability, fees, parking, and pet policies.</p>
         <ul>
           <li>Shipped in a team of four under a hackathon deadline.</li>
           <li>Developed the Python and FastAPI backend for concurrent outbound calls: asyncio, webhook event handling, session state, per-call timeouts, and fallback logic.</li>
-          <li>Owned the email fallback path end to end — SMTP delivery, recipient validation, and a duplicate-send guard so no message goes out twice.</li>
+          <li>Owned the email fallback path end to end, including SMTP delivery, recipient validation, and a duplicate-send guard so no message goes out twice.</li>
           <li>Built an LLM transcript pipeline using structured outputs to convert calls into validated data and re-rank listings; kept the pytest suite green and automated health checks in GitHub Actions.</li>
         </ul>
         <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">asyncio</span><span class="tag">Pydantic</span><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Twilio</span><span class="tag">ElevenLabs</span><span class="tag">OpenAI</span><span class="tag">GitHub Actions</span></div>
@@ -214,7 +222,7 @@
       <div class="num">03</div>
       <div>
         <p class="ptag">TMLS Agentic Hackathon 2026</p>
-        <h3>Maridian — Multi-Agent Decision Layer with Operator Sign-Off</h3>
+        <h3>Maridian: Multi-Agent Decision Layer with Operator Sign-Off</h3>
         <p class="blurb">A decision layer for the factory floor: it ingests production-line defect events and recommends recovery actions, but never acts alone.</p>
         <ul>
           <li>Built the Python and FastAPI backend and its REST API, streaming live workflow updates to a React and Next.js dashboard over Server-Sent Events.</li>
@@ -268,23 +276,45 @@
     <div class="head reveal">
       <p class="eyebrow">Research</p><div class="rule"></div>
       <h2>Publications</h2>
-      <p>Four peer-reviewed publications across algorithms and programming education.</p>
+      <p>Four peer-reviewed papers on AI in programming education and approximation algorithms. <a href="https://scholar.google.ca/citations?user=BsMNzrIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <i class="bi bi-box-arrow-up-right"></i></a></p>
     </div>
     <div class="reveal">
-      <div class="pub">
+      <article class="pub">
         <div class="venue">WAOA 2026</div>
         <div>
-          <h3>Geometric Burning Under L₁ and L∞ Metrics, and Beyond</h3>
-          <p>Accepted at the International Workshop on Approximation and Online Algorithms. Co-authored at the Theory Computing Lab, York University.</p>
+          <h3>Geometric Burning Under L<sub>1</sub> and L<sub>∞</sub> Metrics, and Beyond</h3>
+          <p class="authors">Shahin Kamali, <b>Saba Yazdani</b></p>
+          <p>Approximation algorithms for burning a point set under the L<sub>1</sub> and L<sub>∞</sub> metrics, including a 1.75 + ε approximation for anywhere burning, with the results extended to every L<sub>p</sub> metric.</p>
+          <div class="plinks"><a href="https://arxiv.org/abs/2608.15954" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Read paper</a></div>
         </div>
-      </div>
-      <div class="pub">
-        <div class="venue">Conference ×3</div>
+      </article>
+      <article class="pub">
+        <div class="venue">CEEA 2026</div>
         <div>
-          <h3>Peer-reviewed publications on the Gradify platform</h3>
-          <p>Three conference papers co-authored at the Programming Education Lab, York University, on automated and AI-assisted grading.</p>
+          <h3>Comparative Evaluation of Large Language Models in Computer Programming Education</h3>
+          <p class="authors">Melina Najimi, <b>Saba Yazdani</b>, Marzieh Ahmadzadeh <span class="badge">Co-first author</span></p>
+          <p>Compares six large language models on formative feedback for introductory Java programs, measuring correctness, completeness, specificity, prompt adherence, clarity, and latency. No single model led on every criterion.</p>
+          <div class="plinks"><a href="https://doi.org/10.24908/pceea.2026.21576" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Read paper</a></div>
         </div>
-      </div>
+      </article>
+      <article class="pub">
+        <div class="venue">EDULEARN 2025</div>
+        <div>
+          <h3>The Paradox of Generative AI in Programming Education</h3>
+          <p class="authors"><b>Saba Yazdani</b>, Melina Najimi, Marzieh Ahmadzadeh <span class="badge">Co-first author</span></p>
+          <p>Compares 698 students who took an advanced object-oriented programming course before generative AI with 203 who had access to it. Scores fell on most topics but rose on recursion, and basic submission errors such as file-naming mistakes increased.</p>
+          <div class="plinks"><a href="https://doi.org/10.21125/edulearn.2025.1927" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Read paper</a></div>
+        </div>
+      </article>
+      <article class="pub">
+        <div class="venue">EDULEARN 2025</div>
+        <div>
+          <h3>Beyond Grades: A Java Auto-Grader for Scaffolded Learning</h3>
+          <p class="authors">Melina Najimi, <b>Saba Yazdani</b>, Marzieh Ahmadzadeh <span class="badge">Co-first author</span></p>
+          <p>Introduces Gradify, a Java auto-grader that lets students test their code against a hierarchy of increasingly complex test cases, with separate interfaces for students and instructors.</p>
+          <div class="plinks"><a href="https://doi.org/10.21125/edulearn.2025.1936" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Read paper</a></div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -309,6 +339,7 @@
           <li><i class="bi bi-envelope-fill"></i><a href="mailto:saba.yzdn26@gmail.com">saba.yzdn26@gmail.com</a></li>
           <li><i class="bi bi-github"></i><a href="https://github.com/sabayazdani" target="_blank" rel="noopener">github.com/sabayazdani</a></li>
           <li><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/saba-yazdani" target="_blank" rel="noopener">linkedin.com/in/saba-yazdani</a></li>
+          <li><i class="bi bi-journal-text"></i><a href="https://scholar.google.ca/citations?user=BsMNzrIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
           <li><i class="bi bi-geo-alt-fill"></i>Toronto, Ontario, Canada</li>
         </ul>
       </div>

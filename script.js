@@ -1,15 +1,11 @@
-/* Saba Yazdani — site behaviour */
+/* Saba Yazdani: site behaviour */
 (function () {
   'use strict';
   var root = document.documentElement;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---- theme (persisted; falls back to OS preference) ---- */
-  var saved = null;
-  try { saved = localStorage.getItem('theme'); } catch (e) {}
-  if (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches) saved = 'dark';
-  if (saved) root.setAttribute('data-theme', saved);
-
+  /* initial theme is applied by the inline script in <head> */
   var themeBtn = document.getElementById('theme');
   function paintIcon() {
     var dark = root.getAttribute('data-theme') === 'dark';
@@ -85,6 +81,9 @@
 
   /* ---- count-up stats ---- */
   var nums = document.querySelectorAll('[data-count]');
+  if (!reduce) nums.forEach(function (n) {
+    n.textContent = (0).toFixed(parseInt(n.dataset.dec || '0', 10)) + (n.dataset.suffix || '');
+  });
   function countUp(node) {
     var target = parseFloat(node.dataset.count);
     var dec = parseInt(node.dataset.dec || '0', 10);
