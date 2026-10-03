@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saba Yazdani — Full-Stack Engineer</title>
+<meta name="description" content="Full-stack engineer in Toronto. Builds and maintains Gradify, an AI-assisted platform in production at York University. React, TypeScript, Node, Python, PostgreSQL, LLM systems.">
+<meta property="og:title" content="Saba Yazdani — Full-Stack Engineer">
+<meta property="og:description" content="Full-stack engineer in Toronto. Production AI systems, LLM integration, and four peer-reviewed publications.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234F46E5'/><text x='50' y='68' font-size='54' font-family='Poppins,sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a href="#hero" class="brand">Saba<span>.</span></a>
+    <ul class="nav-links" id="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="icon-btn" id="theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+    <button class="icon-btn burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="wrap">
+    <p class="eyebrow">Toronto, Canada</p>
+    <h1>Saba <em>Yazdani</em></h1>
+    <p class="typed"><span id="type"></span><span class="caret"></span></p>
+    <p class="lede">I build software that puts a person in the loop — AI proposes, a human approves, and every decision is on the record.</p>
+    <div class="cta">
+      <a href="#projects" class="btn btn-primary">View my work <i class="bi bi-arrow-right"></i></a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about"><i class="bi bi-chevron-down"></i></a>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Who I am</p><div class="rule"></div>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I'm a full-stack engineer in Toronto. I build and maintain <strong>Gradify</strong>, an AI-assisted grading platform that runs in production across senior Computer Science courses at York University — React on the front, Java and Spring Boot REST services behind it, PostgreSQL underneath, and Claude and Gemini doing the multimodal grading.</p>
+        <h3>The part I care about most</h3>
+        <p>Designing the gate between a model and a consequence. On Gradify the model proposes rubric scores and criterion-level feedback, an instructor reviews, overrides and gives final approval before anything reaches a student, and every decision is logged with its justification. I made the same call independently on Maridian, where an agent pipeline recommends recovery actions but nothing customer-facing ships without operator sign-off.</p>
+        <h3>Research and the rest</h3>
+        <p>I've been a research assistant at York since 2024, across three labs — programming education, data mining, and theoretical computer science — and I've co-authored four peer-reviewed publications. Outside the lab I build at hackathons, which is where Maridian and Realest came from.</p>
+      </div>
+      <aside class="reveal">
+        <ul class="facts">
+          <li><i class="bi bi-geo-alt-fill"></i><span><b>Location</b> Toronto, Ontario</span></li>
+          <li><i class="bi bi-envelope-fill"></i><span><b>Email</b> <a href="mailto:saba.yzdn26@gmail.com">saba.yzdn26@gmail.com</a></span></li>
+          <li><i class="bi bi-mortarboard-fill"></i><span><b>Education</b> B.Sc. Computer Science, York University</span></li>
+          <li><i class="bi bi-award-fill"></i><span><b>Standing</b> GPA 3.84/4.0, First Class with Distinction</span></li>
+          <li><i class="bi bi-briefcase-fill"></i><span><b>Currently</b> Research Assistant, York University</span></li>
+          <li><i class="bi bi-stars"></i><span><b>Interests</b>
+            <span class="chips">
+              <span class="chip">Full-Stack Product</span><span class="chip">AI &amp; LLM Systems</span>
+              <span class="chip">Human-in-the-Loop Design</span><span class="chip">Developer Tooling</span>
+            </span></span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="soft" style="padding:62px 0">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><div class="n" data-count="4">4</div><p>Peer-reviewed publications</p></div>
+      <div class="stat"><div class="n" data-count="3.84" data-dec="2">3.84</div><p>GPA out of 4.0</p></div>
+      <div class="stat"><div class="n" data-count="3">3</div><p>York research labs</p></div>
+      <div class="stat"><div class="n" data-count="5" data-suffix="+">5+</div><p>A+ core CS courses</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Where I've been</p><div class="rule"></div>
+      <h2>Experience</h2>
+      <p>Research, teaching, and a platform that real people use every term.</p>
+    </div>
+    <div class="two">
+      <div class="reveal">
+        <div class="tl">
+          <div class="tl-item">
+            <div class="role">Research Assistant</div>
+            <div class="when">Apr 2024 — Present</div>
+            <div class="where">York University, Toronto</div>
+            <div class="sub">
+              <h4>Programming Education Lab</h4>
+              <div class="when">Sep 2024 — Present</div>
+              <ul>
+                <li>Build and maintain <strong>Gradify</strong> in production use by instructors and students across senior courses — React front end, Spring Boot REST services, PostgreSQL.</li>
+                <li>Ship end-to-end features across student, instructor, and admin workflows; debug and resolve production issues during live courses.</li>
+                <li>Wrote unit and integration tests covering grading logic; manage releases through Git-based workflows.</li>
+                <li>Co-authored three peer-reviewed conference publications on the platform.</li>
+              </ul>
+            </div>
+            <div class="sub">
+              <h4>Theory Computing Lab</h4>
+              <div class="when">Apr 2024 — Present</div>
+              <ul>
+                <li>Built succinct graph data structures for compact storage and efficient queries on large datasets.</li>
+                <li>Implemented and evaluated algorithms, analyzing performance, correctness, and memory trade-offs.</li>
+              </ul>
+            </div>
+            <div class="sub">
+              <h4>Data Mining Lab</h4>
+              <div class="when">Jan 2025 — Dec 2025</div>
+              <ul>
+                <li>Built a Python question-answering service over structured geospatial datasets using embeddings and FAISS vector search with a lightweight LLM.</li>
+                <li>Evaluated model outputs for accuracy, consistency, and reliability; wrote the technical documentation.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="role">Teaching Assistant</div>
+            <div class="when">Jan 2025 — Dec 2025</div>
+            <div class="where">York University, Toronto</div>
+            <ul>
+              <li>Led lab sessions and ran code reviews of student work across EECS2021 (Computer Organization), EECS2030 (Object-Oriented Programming), and EECS3000 (Professional Practice).</li>
+              <li>Explained technical decisions to non-specialist audiences under deadline.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="tl">
+          <div class="tl-item">
+            <div class="role">B.Sc. Computer Science</div>
+            <div class="when">2021 — 2025</div>
+            <div class="where">York University, Specialized Honours</div>
+            <ul>
+              <li>GPA 3.84 / 4.0 — First Class with Distinction.</li>
+              <li>A+ in Software Design, Database Management Systems, Artificial Intelligence, Big Data Systems, and Design and Analysis of Algorithms.</li>
+            </ul>
+          </div>
+          <div class="tl-item">
+            <div class="role">Hackathons</div>
+            <div class="when">2026</div>
+            <div class="where">Toronto</div>
+            <ul>
+              <li><strong>TMLS Agentic Hackathon</strong> — Maridian, a multi-agent decision layer with operator sign-off.</li>
+              <li><strong>AI Tinkerers Hackathon</strong> — Realest, an AI voice agent built with a team of four.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="projects">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">What I've built</p><div class="rule"></div>
+      <h2>Selected Projects</h2>
+      <p>One platform in production and two agent systems shipped under hackathon deadlines.</p>
+    </div>
+
+    <article class="proj reveal">
+      <div class="num">01</div>
+      <div>
+        <p class="ptag">Production · York University</p>
+        <h3>Gradify — AI-Assisted Grading Platform</h3>
+        <p class="blurb">A full-stack platform that grades handwritten and PDF submissions with multimodal LLMs, and keeps a human in final control of every result.</p>
+        <ul>
+          <li>Built and deployed the full stack for live courses: React instructor, student, and admin workflows over Spring Boot REST APIs, PostgreSQL persistence, and role-based access control.</li>
+          <li>Designed the AI oversight model — the model proposes rubric scores and criterion-level feedback, an instructor overrides and gives final approval before release, and every decision is logged with its justification.</li>
+          <li>Built a Java autograding pipeline with in-memory compilation via the JavaCompiler API, JUnit 5 execution through the Platform Launcher, and Checkstyle static analysis with weighted test and style scoring.</li>
+          <li>Developed asynchronous batch processing with Spring @Async and custom thread pools: concurrent multi-student grading, per-batch locking, retries, progress tracking, and email delivery.</li>
+        </ul>
+        <div class="tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span><span class="tag">Claude</span><span class="tag">Gemini</span><span class="tag">JUnit 5</span><span class="tag">Checkstyle</span></div>
+        <div class="plinks"><a href="https://gradify.eecs.yorku.ca/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Visit Gradify</a></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="num">02</div>
+      <div>
+        <p class="ptag">AI Tinkerers Hackathon 2026</p>
+        <h3>Realest — AI Voice Agent for Rental Verification</h3>
+        <p class="blurb">A voice agent that phones listing agents on a renter's behalf to verify availability, fees, parking, and pet policies.</p>
+        <ul>
+          <li>Shipped in a team of four under a hackathon deadline.</li>
+          <li>Developed the Python and FastAPI backend for concurrent outbound calls: asyncio, webhook event handling, session state, per-call timeouts, and fallback logic.</li>
+          <li>Owned the email fallback path end to end — SMTP delivery, recipient validation, and a duplicate-send guard so no message goes out twice.</li>
+          <li>Built an LLM transcript pipeline using structured outputs to convert calls into validated data and re-rank listings; kept the pytest suite green and automated health checks in GitHub Actions.</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">asyncio</span><span class="tag">Pydantic</span><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Twilio</span><span class="tag">ElevenLabs</span><span class="tag">OpenAI</span><span class="tag">GitHub Actions</span></div>
+        <div class="plinks"><a href="https://github.com/AamelAI/realest" target="_blank" rel="noopener"><i class="bi bi-github"></i> View code</a></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="num">03</div>
+      <div>
+        <p class="ptag">TMLS Agentic Hackathon 2026</p>
+        <h3>Maridian — Multi-Agent Decision Layer with Operator Sign-Off</h3>
+        <p class="blurb">A decision layer for the factory floor: it ingests production-line defect events and recommends recovery actions, but never acts alone.</p>
+        <ul>
+          <li>Built the Python and FastAPI backend and its REST API, streaming live workflow updates to a React and Next.js dashboard over Server-Sent Events.</li>
+          <li>Engineered an LLM multi-agent workflow for incident triage, action planning, and scoring, with human-in-the-loop approval controls and decision logging so no customer-facing action ships without operator sign-off.</li>
+          <li>Deployed both tiers to managed cloud hosting as a working public application.</li>
+        </ul>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">Server-Sent Events</span><span class="tag">Vercel</span><span class="tag">Railway</span></div>
+        <div class="plinks">
+          <a href="https://fgf-sentinel-web.vercel.app/maridian/login.html" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live demo</a>
+          <a href="https://github.com/sabayazdani/maridian-sentinel" target="_blank" rel="noopener"><i class="bi bi-github"></i> View code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="num">04</div>
+      <div>
+        <p class="ptag">Systems · C</p>
+        <h3>Operating Systems Simulators</h3>
+        <p class="blurb">Low-level work from the systems side of the degree.</p>
+        <ul>
+          <li>Implemented FCFS, SJF, Priority, and Round-Robin CPU schedulers in C, evaluating turnaround, waiting, and response times across workloads.</li>
+          <li>Built a virtual memory simulator with TLB, page table, and backing-store paging; analyzed TLB hit rates and page-fault behaviour through address-translation testing.</li>
+        </ul>
+        <div class="tags"><span class="tag">C</span><span class="tag">Operating Systems</span><span class="tag">Memory Management</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">My toolkit</p><div class="rule"></div>
+      <h2>Skills</h2>
+      <p>What I reach for day to day.</p>
+    </div>
+    <div class="skills">
+      <div class="sk reveal"><h3>Front-End</h3><div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">JavaScript (ES6+)</span><span class="tag">HTML/CSS</span></div></div>
+      <div class="sk reveal"><h3>Back-End &amp; APIs</h3><div class="tags"><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span><span class="tag">Microservices</span><span class="tag">OAuth2</span><span class="tag">Server-Sent Events</span></div></div>
+      <div class="sk reveal"><h3>Databases</h3><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">Neo4j</span></div></div>
+      <div class="sk reveal"><h3>AI &amp; LLM Systems</h3><div class="tags"><span class="tag">Claude</span><span class="tag">Gemini</span><span class="tag">OpenAI</span><span class="tag">Structured Outputs</span><span class="tag">RAG</span><span class="tag">Embeddings</span><span class="tag">Vector Search (FAISS)</span><span class="tag">PyTorch</span><span class="tag">scikit-learn</span></div></div>
+      <div class="sk reveal"><h3>Cloud, DevOps &amp; QA</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">Vercel</span><span class="tag">Railway</span><span class="tag">Google Cloud</span><span class="tag">Azure</span><span class="tag">Linux</span><span class="tag">pytest</span><span class="tag">JUnit 5</span></div></div>
+      <div class="sk reveal"><h3>Practices</h3><div class="tags"><span class="tag">Code Reviews</span><span class="tag">Agile/Scrum</span><span class="tag">SDLC</span><span class="tag">Role-Based Access Control</span><span class="tag">Technical Documentation</span><span class="tag">Debugging</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="research">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Research</p><div class="rule"></div>
+      <h2>Publications</h2>
+      <p>Four peer-reviewed publications across algorithms and programming education.</p>
+    </div>
+    <div class="reveal">
+      <div class="pub">
+        <div class="venue">WAOA 2026</div>
+        <div>
+          <h3>Geometric Burning Under L₁ and L∞ Metrics, and Beyond</h3>
+          <p>Accepted at the International Workshop on Approximation and Online Algorithms. Co-authored at the Theory Computing Lab, York University.</p>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="venue">Conference ×3</div>
+        <div>
+          <h3>Peer-reviewed publications on the Gradify platform</h3>
+          <p>Three conference papers co-authored at the Programming Education Lab, York University, on automated and AI-assisted grading.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Say hello</p><div class="rule"></div>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact">
+      <div class="reveal">
+        <h3 style="font-size:1.3rem;font-weight:600;margin-bottom:10px">Let's build something.</h3>
+        <p>I'm happy to talk about full-stack product work, LLM systems, or how to keep a human meaningfully in the loop when a model is making calls. Email is the fastest way to reach me.</p>
+        <div class="cta" style="justify-content:flex-start;margin-top:26px">
+          <a href="mailto:saba.yzdn26@gmail.com" class="btn btn-primary"><i class="bi bi-envelope-fill"></i> Email me</a>
+          <a href="SabaYazdani.pdf" class="btn btn-ghost" download><i class="bi bi-download"></i> Résumé</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <ul class="clist">
+          <li><i class="bi bi-envelope-fill"></i><a href="mailto:saba.yzdn26@gmail.com">saba.yzdn26@gmail.com</a></li>
+          <li><i class="bi bi-github"></i><a href="https://github.com/sabayazdani" target="_blank" rel="noopener">github.com/sabayazdani</a></li>
+          <li><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/saba-yazdani" target="_blank" rel="noopener">linkedin.com/in/saba-yazdani</a></li>
+          <li><i class="bi bi-geo-alt-fill"></i>Toronto, Ontario, Canada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">© <span id="yr"></span> Saba Yazdani · Built from scratch in Toronto</div></footer>
+<button class="icon-btn" id="top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
