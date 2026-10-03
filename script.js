@@ -79,33 +79,6 @@
     items.forEach(function (n) { io.observe(n); });
   }
 
-  /* ---- count-up stats ---- */
-  var nums = document.querySelectorAll('[data-count]');
-  if (!reduce) nums.forEach(function (n) {
-    n.textContent = (0).toFixed(parseInt(n.dataset.dec || '0', 10)) + (n.dataset.suffix || '');
-  });
-  function countUp(node) {
-    var target = parseFloat(node.dataset.count);
-    var dec = parseInt(node.dataset.dec || '0', 10);
-    var suffix = node.dataset.suffix || '';
-    if (reduce) { node.textContent = target.toFixed(dec) + suffix; return; }
-    var start = performance.now(), dur = 1400;
-    (function frame(now) {
-      var p = Math.min((now - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      node.textContent = (target * eased).toFixed(dec) + suffix;
-      if (p < 1) requestAnimationFrame(frame);
-    })(start);
-  }
-  if ('IntersectionObserver' in window) {
-    var io2 = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) { countUp(en.target); io2.unobserve(en.target); }
-      });
-    }, { threshold: 0.5 });
-    nums.forEach(function (n) { io2.observe(n); });
-  }
-
   /* ---- active section in nav ---- */
   var navAs = [].slice.call(document.querySelectorAll('.nav-links a'));
   var sections = navAs.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);

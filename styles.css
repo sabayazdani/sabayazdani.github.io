@@ -94,12 +94,6 @@ section{padding:104px 0}
 .chips{display:flex; flex-wrap:wrap; gap:7px; margin-top:8px}
 .chip{font-size:12.5px; font-weight:500; padding:5px 12px; border-radius:999px; background:var(--accent-tint); color:var(--accent)}
 
-/* stats */
-.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; text-align:center}
-.stat .n{font-family:Poppins,sans-serif; font-weight:700; font-size:clamp(2rem,4.4vw,2.9rem); letter-spacing:-1.5px;
-  background:var(--accent-grad); -webkit-background-clip:text; background-clip:text; color:transparent}
-.stat p{margin:4px 0 0; font-size:13.5px; color:var(--muted)}
-
 /* timeline */
 .tl{position:relative; padding-left:30px}
 .tl::before{content:""; position:absolute; left:6px; top:6px; bottom:6px; width:2px; background:var(--line)}
@@ -171,8 +165,7 @@ footer{padding:34px 0; border-top:1px solid var(--line); text-align:center; font
 #top.show{opacity:1; pointer-events:auto}
 
 @media (max-width:900px){
-  .about-grid,.two,.contact,.stats{grid-template-columns:1fr; gap:34px}
-  .stats{grid-template-columns:repeat(2,1fr); gap:28px}
+  .about-grid,.two,.contact{grid-template-columns:1fr; gap:34px}
   .nav-links{position:fixed; inset:68px 0 auto 0; flex-direction:column; gap:0; background:var(--bg);
     border-bottom:1px solid var(--line); padding:8px 24px 18px; display:none}
   .nav-links.open{display:flex}
