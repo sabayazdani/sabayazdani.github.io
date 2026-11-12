@@ -181,7 +181,7 @@
     <div class="head reveal">
       <p class="eyebrow">What I've built</p><div class="rule"></div>
       <h2>Selected Projects</h2>
-      <p>Two agent systems shipped under hackathon deadlines, a platform in production at York University, and a RAG tool for geographic questions.</p>
+      <p>Two agent systems shipped under hackathon deadlines, a platform in production at York University with an OutSystems app built on top of it, a RAG tool for geographic questions, and data-driven desktop and systems work.</p>
     </div>
 
     <article class="proj reveal" id="realest">
@@ -237,8 +237,25 @@
       </div>
     </article>
 
-    <article class="proj reveal" id="geoqa">
+    <article class="proj reveal" id="regrade">
       <div class="num">04</div>
+      <div>
+        <p class="ptag">OutSystems · Built on Gradify</p>
+        <h3>Regrade Request App for Gradify</h3>
+        <p class="blurb">An OutSystems Reactive Web App that gives students a formal way to request a regrade and gives instructors one queue to review, approve, or reject requests, instead of scattered emails.</p>
+        <ul>
+          <li>Built role-specific workflows: students see their graded submissions and submit a request with a reason; instructors review a queue and approve with a new score or reject with a comment, and every request carries a tracked status.</li>
+          <li>Designed the data model as relational entities (courses, assignments, submissions, regrade requests) with a static entity for request status, and used Aggregates for the screens' lists and filters.</li>
+          <li>Kept business rules in reusable Server Actions: validation that blocks invalid or duplicate requests and out-of-range scores, exception handling with user-friendly messages, and automatic score updates when a request is approved.</li>
+          <li>Consumed Gradify's Spring Boot REST API for course and assignment data, with error handling and fallback logic if the API is unavailable.</li>
+          <li>Added a nightly Timer that expires stale requests, SQL-based reporting on regrade activity, and split the app into reusable Core and UI modules.</li>
+        </ul>
+        <div class="tags"><span class="tag">OutSystems</span><span class="tag">Reactive Web App</span><span class="tag">Service Studio</span><span class="tag">Entities</span><span class="tag">Aggregates</span><span class="tag">Server Actions</span><span class="tag">REST APIs</span><span class="tag">Timers</span><span class="tag">SQL</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal" id="geoqa">
+      <div class="num">05</div>
       <div>
         <p class="ptag">Data Mining Lab · York University</p>
         <h3>Region-Based GeoQA: RAG for Geographic Questions</h3>
@@ -252,8 +269,23 @@
       </div>
     </article>
 
+    <article class="proj reveal" id="grade-manager">
+      <div class="num">06</div>
+      <div>
+        <p class="ptag">Desktop · C# and .NET</p>
+        <h3>Student Grade Management System</h3>
+        <p class="blurb">A Windows desktop application for managing student records, courses, and grades on a SQL Server database.</p>
+        <ul>
+          <li>Built the application in C# and .NET with Windows Forms screens for students, courses, and grades.</li>
+          <li>Implemented full CRUD operations: add, edit, delete, and search student information.</li>
+          <li>Stored all data in SQL Server and automated grade-average calculations.</li>
+        </ul>
+        <div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">Windows Forms</span><span class="tag">SQL Server</span><span class="tag">CRUD</span></div>
+      </div>
+    </article>
+
     <article class="proj reveal">
-      <div class="num">05</div>
+      <div class="num">07</div>
       <div>
         <p class="ptag">Systems · C</p>
         <h3>Operating Systems Simulators</h3>
